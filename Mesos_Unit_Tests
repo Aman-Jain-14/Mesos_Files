@@ -1,0 +1,1710 @@
+AnonymousTest.
+  Running
+AgentAPITest.
+  AttachContainerInputFailure
+  AttachContainerInputValidation
+  HeaderValidation
+AttributesTest.
+  Parsing
+  Equality
+AuthenticationTest.
+  UnauthenticatedFramework
+  UnauthenticatedSlave
+  DisableFrameworkAuthentication
+  DisableSlaveAuthentication
+  MismatchedFrameworkInfoPrincipal
+  DisabledFrameworkAuthenticationPrincipalMismatch
+  UnspecifiedFrameworkInfoPrincipal
+  AuthenticatedFramework
+  AuthenticatedSlave
+  RetryFrameworkAuthentication
+  RetrySlaveAuthentication
+  DropIntermediateSASLMessage
+  DropIntermediateSASLMessageForSlave
+  DropFinalSASLMessage
+  DropFinalSASLMessageForSlave
+  MasterFailover
+  MasterFailoverDuringSlaveAuthentication
+  LeaderElection
+  LeaderElectionDuringSlaveAuthentication
+  SchedulerFailover
+  RejectedSchedulerFailover
+AuthorizationTest/0.  # TypeParam = mesos::internal::tests::Module<mesos::Authorizer, (mesos::internal::tests::ModuleID)8>
+  AnyPrincipalRunAsUser
+  NoPrincipalRunAsUser
+  PrincipalRunAsAnyUser
+  AnyPrincipalRunAsAnyUser
+  OnlySomePrincipalsRunAsSomeUsers
+  SomePrincipalOnlySomeUser
+  PrincipalRunAsSomeUserRestrictive
+  AnyPrincipalOfferedRole
+  SomePrincipalsOfferedRole
+  PrincipalOfferedRole
+  PrincipalNotOfferedAnyRoleRestrictive
+  Reserve
+  Unreserve
+  CreateVolume
+  DestroyVolume
+  UpdateQuota
+  ConflictQuotaACLs
+  SetQuota
+  RemoveQuota
+  ViewFramework
+  ViewContainer
+  ViewTask
+  ViewExecutor
+  SandBoxAccess
+  LaunchNestedContainerSessions
+  AttachContainerInput
+  AttachContainerOutput
+  LaunchNestedContainers
+  WaitNestedContainer
+  KillNestedContainer
+  RemoveNestedContainer
+  OptionalObject
+  ViewFlags
+  SetLogLevel
+  ValidateEndpoints
+  ViewRole
+AuthorizationTest/1.  # TypeParam = mesos::internal::LocalAuthorizer
+  AnyPrincipalRunAsUser
+  NoPrincipalRunAsUser
+  PrincipalRunAsAnyUser
+  AnyPrincipalRunAsAnyUser
+  OnlySomePrincipalsRunAsSomeUsers
+  SomePrincipalOnlySomeUser
+  PrincipalRunAsSomeUserRestrictive
+  AnyPrincipalOfferedRole
+  SomePrincipalsOfferedRole
+  PrincipalOfferedRole
+  PrincipalNotOfferedAnyRoleRestrictive
+  Reserve
+  Unreserve
+  CreateVolume
+  DestroyVolume
+  UpdateQuota
+  ConflictQuotaACLs
+  SetQuota
+  RemoveQuota
+  ViewFramework
+  ViewContainer
+  ViewTask
+  ViewExecutor
+  SandBoxAccess
+  LaunchNestedContainerSessions
+  AttachContainerInput
+  AttachContainerOutput
+  LaunchNestedContainers
+  WaitNestedContainer
+  KillNestedContainer
+  RemoveNestedContainer
+  OptionalObject
+  ViewFlags
+  SetLogLevel
+  ValidateEndpoints
+  ViewRole
+CheckTest.
+  CheckInfoValidation
+  CheckStatusInfoValidation
+HTTPCommandExecutorTest.
+  TerminateWithACK
+  ExplicitAcknowledgements
+ContainerLoggerTest.
+  DefaultToSandbox
+  LOGROTATE_RotateInSandbox
+  LOGROTATE_CustomRotateOptions
+  LOGROTATE_ModuleFDOwnership
+CRAMMD5AuthenticationTest/0.  # TypeParam = mesos::internal::cram_md5::Authentication<mesos::internal::tests::Module<mesos::Authenticatee, (mesos::internal::tests::ModuleID)2>, mesos::internal::cram_md5::CRAMMD5Authenticator>
+  Success
+  Failed1
+  Failed2
+  AuthenticatorDestructionRace
+  AuthenticateeSecretMissing
+CRAMMD5AuthenticationTest/1.  # TypeParam = mesos::internal::cram_md5::Authentication<mesos::internal::cram_md5::CRAMMD5Authenticatee, mesos::internal::tests::Module<mesos::Authenticator, (mesos::internal::tests::ModuleID)3> >
+  Success
+  Failed1
+  Failed2
+  AuthenticatorDestructionRace
+  AuthenticateeSecretMissing
+CRAMMD5AuthenticationTest/2.  # TypeParam = mesos::internal::cram_md5::Authentication<mesos::internal::tests::Module<mesos::Authenticatee, (mesos::internal::tests::ModuleID)2>, mesos::internal::tests::Module<mesos::Authenticator, (mesos::internal::tests::ModuleID)3> >
+  Success
+  Failed1
+  Failed2
+  AuthenticatorDestructionRace
+  AuthenticateeSecretMissing
+CRAMMD5AuthenticationTest/3.  # TypeParam = mesos::internal::cram_md5::Authentication<mesos::internal::cram_md5::CRAMMD5Authenticatee, mesos::internal::cram_md5::CRAMMD5Authenticator>
+  Success
+  Failed1
+  Failed2
+  AuthenticatorDestructionRace
+  AuthenticateeSecretMissing
+CredentialsTest.
+  AuthenticatedSlave
+  AuthenticatedSlaveText
+  AuthenticatedSlaveJSON
+DiskUsageCollectorTest.
+  File
+  Directory
+  SymbolicLink
+  ExcludeRelativePath
+DiskQuotaTest.
+  DiskUsageExceedsQuota
+  VolumeUsageExceedsQuota
+  NoQuotaEnforcement
+  ResourceStatistics
+  SlaveRecovery
+DynamicWeightsTest.
+  PutInvalidRequest
+  ZeroWeight
+  NegativeWeight
+  NonNumericWeight
+  MissingRole
+  UnknownRole
+  UpdateWeightsWithExplictRoles
+  UnauthenticatedUpdateWeightRequest
+  UnauthenticatedQueryWeightRequest
+  AuthorizedGetWeightsRequest
+  AuthorizedWeightUpdateRequest
+  AuthorizedUpdateWeightRequestWithoutPrincipal
+  UnauthorizedWeightUpdateRequest
+  RecoveredWeightsFromRegistry
+ExamplesTest.
+  TestFramework
+  NoExecutorFramework
+  TestHTTPFramework
+  PersistentVolumeFramework
+  DynamicReservationFramework
+  DiskFullFramework
+  JavaFramework
+  JavaException
+  JavaLog
+  V0JavaFramework
+  V1JavaFramework
+  PythonFramework
+ExceptionTest.
+  DeactivateFrameworkOnAbort
+  DisallowSchedulerActionsOnAbort
+  DisallowSchedulerCallbacksOnAbort
+ExecutorHttpApiTest.
+  NoContentType
+  ValidJsonButInvalidProtobuf
+  GetRequest
+  SubscribeBeforeContainerizerRecovery
+FaultToleranceTest.
+  MasterFailover
+  ReregisterCompletedFrameworks
+  SchedulerFailover
+  SchedulerReregisterAfterFailoverTimeout
+  SchedulerReregisterAfterUnregistration
+  SchedulerFailoverRetriedReregistration
+  FrameworkReliableRegistration
+  FrameworkReregister
+  DisconnectedSchedulerLaunchLost
+  DisconnectedSchedulerLaunchDropped
+  SchedulerFailoverStatusUpdate
+  ReregisterFrameworkExitedExecutor
+  ForwardStatusUpdateUnknownExecutor
+  SchedulerFailoverExecutorToFrameworkMessage
+  SchedulerFailoverFrameworkToExecutorMessage
+  IgnoreKillTaskFromUnregisteredFramework
+  SchedulerExit
+  SlaveReliableRegistration
+  SlaveReregisterOnZKExpiration
+  FrameworkReregisterEmptyExecutor
+  SplitBrainMasters
+  UpdateFrameworkInfoOnSchedulerFailover
+  UpdateFrameworkInfoOnMasterFailover
+FetcherCacheTest.
+  LocalUncached
+  LocalCached
+  CachedCustomFilename
+  CachedCustomOutputFileWithSubdirectory
+  CachedFallback
+  LocalUncachedExtract
+  LocalCachedExtract
+  SimpleEviction
+  FallbackFromEviction
+  RemoveLRUCacheEntries
+FetcherCacheHttpTest.
+  HttpCachedSerialized
+  HttpCachedConcurrent
+  HttpMixed
+  DISABLED_HttpCachedRecovery
+FetcherTest.
+  FileURI
+  CustomOutputFileSubdirectory
+  AbsoluteCustomSubdirectoryFails
+  InvalidUser
+  NonExistingFile
+  MalformedURI
+  AbsoluteFilePath
+  RelativeFilePath
+  OSNetUriTest
+  OSNetUriSpaceTest
+  FileLocalhostURI
+  NoExtractNotExecutable
+  NoExtractExecutable
+  ExtractNotExecutable
+  ExtractTar
+  ExtractGzipFile
+  UNZIP_ExtractFile
+  UNZIP_ExtractInvalidFile
+  UNZIP_ExtractFileWithDuplicatedEntries
+  UseCustomOutputFile
+  CustomGzipOutputFile
+  HdfsURI
+  SSLEnvironmentSpillover
+FilesTest.
+  AttachTest
+  DetachTest
+  ReadTest
+  ResolveTest
+  BrowseTest
+  DownloadTest
+  DebugTest
+  AuthenticationTest
+GarbageCollectorTest.
+  Schedule
+  Unschedule
+  Prune
+GarbageCollectorIntegrationTest.
+  Restart
+  ExitedFramework
+  ExitedExecutor
+  DiskUsage
+  Unschedule
+HdfsTest.
+  Exists
+  Du
+  ThreeFieldDu
+  Rm
+  CopyFromLocal
+  CopyToLocal
+HealthCheckTest.
+  HealthCheckProtobufValidation
+  HealthyTask
+  HealthyTaskNonShell
+  HealthStatusChange
+  ConsecutiveFailures
+  EnvironmentSetup
+  GracePeriod
+  CheckCommandTimeout
+  HealthyToUnhealthyTransitionWithinGracePeriod
+  HealthyTaskViaHTTP
+  HealthyTaskViaHTTPWithoutType
+  HealthyTaskViaTCP
+HierarchicalAllocatorTest.
+  UnreservedDRF
+  ReservedDRF
+  DRFWithFairnessExclusion
+  OfferFilter
+  SmallOfferFilterTimeout
+  MaintenanceInverseOffers
+  CoarseGrained
+  SameShareFairness
+  Reservations
+  RecoverResources
+  Allocatable
+  UpdateAllocation
+  UpdateAllocationSharedPersistentVolume
+  SharedResourcesCapability
+  UpdateAvailableSuccess
+  UpdateAvailableFail
+  UpdateSlaveOversubscribedResources
+  UpdateSlaveCapabilities
+  OversubscribedNotAllocated
+  RecoverOversubscribedResources
+  Whitelist
+  NoDoubleAccounting
+  QuotaProvidesGuarantee
+  RemoveQuota
+  MultipleFrameworksInRoleWithQuota
+  QuotaAllocationGranularity
+  DRFWithQuota
+  QuotaAgainstStarvation
+  QuotaAbsentFramework
+  MultiQuotaAbsentFrameworks
+  MultiQuotaWithFrameworks
+  ReservationWithinQuota
+  QuotaSetAsideReservedResources
+  DeactivateAndReactivateFramework
+  SuppressAndReviveOffers
+  ResourceMetrics
+  ResourceMetricsUninitialized
+  AllocationRunsMetric
+  AllocationRunTimerMetrics
+  ActiveOfferFiltersMetrics
+  DominantShareMetrics
+  DominantShareMetricsWithFairnessExclusion
+  UpdateWeight
+  ReviveOffers
+  SuppressAndReviveOffersWithMultiRole
+  DontOfferOldAgentToMultiRoleFramework
+  DisproportionateQuotaVsAllocation
+HookTest.
+  HookLoading
+  VerifyMasterLaunchTaskHook
+  MasterSlaveLostHookTest
+  VerifySlaveExecutorEnvironmentDecorator
+  VerifySlaveLaunchExecutorHook
+  VerifySlaveRunTaskHook
+  VerifySlaveTaskStatusDecorator
+  VerifySlaveResourcesAndAttributesDecorator
+HttpAuthenticationTest/0.  # TypeParam = mesos::internal::tests::Module<process::http::authentication::Authenticator, (mesos::internal::tests::ModuleID)13>
+  BasicWithoutCredentialsTest
+  BasicWithCredentialsTest
+  BasicWithoutRealm
+HttpAuthenticationTest/1.  # TypeParam = mesos::http::authentication::BasicAuthenticatorFactory
+  BasicWithoutCredentialsTest
+  BasicWithCredentialsTest
+  BasicWithoutRealm
+CombinedAuthenticatorTest.
+  MultipleAuthenticators
+HttpFaultToleranceTest.
+  SchedulerSubscribeAfterFailoverTimeout
+  SchedulerSubscribeAfterTeardown
+  SchedulerFailoverStatusUpdate
+  SchedulerFailoverExecutorToFrameworkMessage
+  SchedulerFailoverFrameworkToExecutorMessage
+  SchedulerExit
+NetworkTest.
+  Watch
+LogStorageTest/0.  # TypeParam = mesos::internal::log::LevelDBStorage
+  Truncate
+  TruncateWithEmptyLog
+  TruncateWithManyHoles
+ReplicaTest.
+  Promise
+  Append
+  Restore
+  NonVoting
+CoordinatorTest.
+  Elect
+  ElectWithClockPaused
+  AppendRead
+  AppendReadError
+  AppendDiscarded
+  ElectNoQuorum
+  AppendNoQuorum
+  Failover
+  Demoted
+  Fill
+  NotLearnedFill
+  MultipleAppends
+  MultipleAppendsNotLearnedFill
+  Truncate
+  TruncateNotLearnedFill
+  TruncateLearnedFill
+  RecoveryRace
+  RacingElect
+  FillNoQuorum
+  FillInconsistent
+  LearnedOnOneReplica_NotLearnedOnAnother
+  LearnedOnOneReplica_NotLearnedOnAnother_AnotherFailsAndRecovers
+RecoverTest.
+  RacingCatchup
+  CatchupRetry
+  AutoInitialization
+  AutoInitializationRetry
+LogTest.
+  WriteRead
+  Position
+  Metrics
+LogZooKeeperTest.
+  WriteRead
+  LostZooKeeper
+LoggingTest.
+  Toggle
+  ToggleAuthenticationEnabled
+  ToggleAuthorizationEnabled
+MasterAllocatorTest/0.  # TypeParam = mesos::internal::master::allocator::MesosAllocator<mesos::internal::master::allocator::HierarchicalAllocatorProcess<mesos::internal::master::allocator::DRFSorter, mesos::internal::master::allocator::DRFSorter, mesos::internal::master::allocator::DRFS...
+  SingleFramework
+  ResourcesUnused
+  OutOfOrderDispatch
+  SchedulerFailover
+  FrameworkExited
+  SlaveLost
+  SlaveAdded
+  TaskFinished
+  CpusOnlyOfferedAndTaskLaunched
+  MemoryOnlyOfferedAndTaskLaunched
+  Whitelist
+  RoleTest
+  FrameworkReregistersFirst
+  SlaveReregistersFirst
+  RebalancedForUpdatedWeights
+MasterAllocatorTest/1.  # TypeParam = mesos::internal::tests::Module<mesos::allocator::Allocator, (mesos::internal::tests::ModuleID)6>
+  SingleFramework
+  ResourcesUnused
+  OutOfOrderDispatch
+  SchedulerFailover
+  FrameworkExited
+  SlaveLost
+  SlaveAdded
+  TaskFinished
+  CpusOnlyOfferedAndTaskLaunched
+  MemoryOnlyOfferedAndTaskLaunched
+  Whitelist
+  RoleTest
+  FrameworkReregistersFirst
+  SlaveReregistersFirst
+  RebalancedForUpdatedWeights
+MasterAuthorizationTest.
+  AuthorizedTask
+  UnauthorizedTask
+  UnauthorizedTaskGroup
+  KillTask
+  KillPendingTaskInTaskGroup
+  SlaveRemovedLost
+  SlaveRemovedDropped
+  FrameworkRemoved
+  PendingExecutorInfoDiffersOnDifferentSlaves
+  AuthorizedRole
+  UnauthorizedRole
+  DuplicateRegistration
+  DuplicateReregistration
+  FrameworkRemovedBeforeRegistration
+  FrameworkRemovedBeforeReregistration
+MasterAuthorizerTest/0.  # TypeParam = mesos::internal::tests::Module<mesos::Authorizer, (mesos::internal::tests::ModuleID)8>
+  FilterStateSummaryEndpoint
+  FilterStateEndpoint
+  FilterFrameworksEndpoint
+  FilterTasksEndpoint
+  ViewFlags
+  FilterRolesEndpoint
+  FilterOrphanedTasks
+MasterAuthorizerTest/1.  # TypeParam = mesos::internal::LocalAuthorizer
+  FilterStateSummaryEndpoint
+  FilterStateEndpoint
+  FilterFrameworksEndpoint
+  FilterTasksEndpoint
+  ViewFlags
+  FilterRolesEndpoint
+  FilterOrphanedTasks
+MasterContenderDetectorTest.
+  File
+BasicMasterContenderDetectorTest.
+  Contender
+  Detector
+  MasterInfo
+ZooKeeperMasterContenderDetectorTest.
+  MasterContender
+  ContenderPendingElection
+  MasterContenders
+  NonRetryableFrrors
+  ContenderDetectorShutdownNetwork
+  MasterDetectorTimedoutSession
+  MasterDetectorExpireMasterZKSession
+  MasterDetectorExpireSlaveZKSession
+  MasterDetectorExpireSlaveZKSessionNewMaster
+  MasterDetectorUsesJson
+MasterMaintenanceTest.
+  UpdateSchedule
+  FailToUnscheduleDeactivatedMachines
+  PendingUnavailabilityTest
+  PreV1SchedulerSupport
+  EnterMaintenanceMode
+  BringDownMachines
+  BringUpMachines
+  MachineStatus
+  InverseOffers
+  InverseOffersFilters
+  EndpointsBadAuthentication
+  AcceptInvalidInverseOffer
+MasterQuotaTest.
+  SetForNonExistentRole
+  InvalidSetRequest
+  SetRequestWithInvalidData
+  SetExistingQuota
+  RemoveSingleQuota
+  Status
+  InsufficientResourcesSingleAgent
+  InsufficientResourcesMultipleAgents
+  AvailableResourcesSingleAgent
+  AvailableResourcesMultipleAgents
+  AvailableResourcesAfterRescinding
+  RecoverQuotaEmptyCluster
+  NoAuthenticationNoAuthorization
+  UnauthenticatedQuotaRequest
+  AuthorizeGetUpdateQuotaRequests
+  AuthorizeSetAndRemoveQuotaRequests
+  AuthorizeGetUpdateQuotaRequestsWithoutPrincipal
+  AuthorizeSetRemoveQuotaRequestsWithoutPrincipal
+MasterSlaveReconciliationTest.
+  SlaveReregisterTerminatedExecutor
+  ReconcileLostTask
+  ReconcileDroppedTask
+  ReconcileRace
+  SlaveReregisterPendingTask
+  SlaveReregisterTerminalTask
+  SlaveReregisterFrameworks
+MasterTest.
+  TaskRunning
+  ShutdownFrameworkWhileTaskRunning
+  KillTask
+  KillUnknownTask
+  KillUnknownTaskSlaveInTransition
+  EndpointsForHalfRemovedSlave
+  StatusUpdateAck
+  RecoverResources
+  FrameworkMessage
+  MultipleExecutors
+  MasterInfo
+  MasterInfoOnReElection
+  MasterLost
+  LaunchCombinedOfferTest
+  LaunchAcrossSlavesLost
+  LaunchAcrossSlavesDropped
+  LaunchDuplicateOfferLost
+  LaunchDuplicateOfferDropped
+  LaunchDifferentRoleLost
+  MetricsInMetricsEndpoint
+  SlavesEndpointWithoutSlaves
+  SlavesEndpointTwoSlaves
+  RecoveredSlaveCanReregister
+  UnreachableTaskAfterFailover
+  RateLimitRecoveredSlaveRemoval
+  CancelRecoveredSlaveRemoval
+  RecoveredSlaveReregisters
+  RecoveredSlaveReregisterThenUnreachableRace
+  RecoveredFramework
+  OrphanTasksMultipleAgents
+  UnregisteredFrameworksAfterTearDown
+  TasksEndpoint
+  IgnoreEphemeralPortsResource
+  OfferTimeout
+  OfferNotRescindedOnceUsed
+  OfferNotRescindedOnceDeclined
+  UnacknowledgedTerminalTask
+  ReleaseResourcesForTerminalTaskWithPendingUpdates
+  StateEndpoint
+  StateEndpointFrameworkInfo
+  StateSummaryEndpoint
+  StateEndpointAgentCapabilities
+  StateEndpointAllocationRole
+  RecoveredSlaves
+  ExecutorLabels
+  TaskLabels
+  TaskStatusLabels
+  TaskStatusContainerStatus
+  SlaveActiveEndpoint
+  TaskDiscoveryInfo
+  MasterFailoverLongLivedExecutor
+  DuplicatedSlaveIdWhenSlaveReregister
+  FrameworkInfoLabels
+  RejectFrameworkWithInvalidRole
+  FrameworksEndpointWithoutFrameworks
+  FrameworksEndpointOneFramework
+  MaxCompletedFrameworksFlag
+  MaxCompletedTasksPerFrameworkFlag
+  EndpointsBadAuthentication
+  ReadonlyEndpointsNoAuthentication
+  ReadwriteEndpointsNoAuthentication
+  RejectFrameworkWithInvalidFailoverTimeout
+  DISABLED_RecoverResourcesOrphanedTask
+  FailoverAgentReregisterFirst
+  AgentRestartNoReregister
+  AgentRestartNoReregisterRateLimit
+  MultiRoleFrameworkReceivesOffers
+WhitelistTest.
+  WhitelistSlave
+HostnameTest.
+  LookupEnabled
+  LookupDisabled
+MasterZooKeeperTest.
+  LostZooKeeperCluster
+  MasterInfoAddress
+ResourceValidationTest.
+  StaticReservation
+  DynamicReservation
+  RevocableDynamicReservation
+  InvalidRoleReservationPair
+  PersistentVolume
+  UnreservedDiskInfo
+  InvalidPersistenceID
+  PersistentVolumeWithoutVolumeInfo
+  PersistentVolumeWithHostPath
+  NonPersistentVolume
+  RevocablePersistentVolume
+  UnshareableResource
+  SharedPersistentVolume
+ReserveOperationValidationTest.
+  MatchingRole
+  DisallowReservingToStar
+  MatchingPrincipal
+  NonMatchingPrincipal
+  ReservationInfoMissingPrincipal
+  StaticReservation
+  NoPersistentVolumes
+  MismatchedAllocation
+  UnexpectedAllocatedResource
+  MixedAllocationRoles
+UnreserveOperationValidationTest.
+  WithoutACL
+  FrameworkMissingPrincipal
+  StaticReservation
+  NoPersistentVolumes
+CreateOperationValidationTest.
+  PersistentVolumes
+  DuplicatedPersistenceID
+  NonMatchingPrincipal
+  ReadOnlyPersistentVolume
+  SharedVolumeBasedOnCapability
+  InsufficientDiskResource
+  MixedAllocationRole
+DestroyOperationValidationTest.
+  PersistentVolumes
+  SharedPersistentVolumeInUse
+  SharedPersistentVolumeInPendingTasks
+  UnknownPersistentVolume
+TaskValidationTest.
+  ExecutorUsesInvalidFrameworkID
+  ExecutorEnvironmentInvalid
+  ExecutorMissingFrameworkID
+  TaskUsesCommandInfoAndExecutorInfo
+  TaskUsesExecutorInfoWithoutCommandInfo
+  TaskUsesDefaultExecutor
+  TaskUsesNoResources
+  TaskUsesMoreResourcesThanOffered
+  DuplicatedTaskID
+  ExecutorInfoDiffersOnSameSlave
+  ExecutorInfoDiffersOnDifferentSlaves
+  TaskReusesUnreachableTaskID
+  TaskUsesRevocableResources
+  TaskInfoAllocatedResources
+  TaskAndExecutorUseRevocableResources
+  ExecutorShutdownGracePeriodIsNonNegative
+  KillPolicyGracePeriodIsNonNegative
+  TaskEnvironmentInvalid
+ExecutorValidationTest.
+  ExecutorType
+  ExecutorID
+  ExecutorInfoAllocatedResources
+TaskGroupValidationTest.
+  TaskGroupUsesRevocableResources
+  TaskGroupAndExecutorUsesRevocableResources
+  ExecutorUsesDockerContainerInfo
+  ExecutorWithoutFrameworkId
+  TaskUsesDockerContainerInfo
+  TaskUsesNetworkInfo
+  TaskUsesDifferentExecutor
+  ExecutorEnvironmentInvalid
+  TaskEnvironmentInvalid
+FrameworkInfoValidationTest.
+  ValidateRoles
+  MissingMultiRoleCapability
+  AcceptMultiRoleFramework
+  MultiRoleWhitelist
+  UpgradeToMultiRole
+  DowngradeFromMultipleRoles
+  RoleChangeWithMultiRole
+  RoleChangeWithMultiRoleMasterFailover
+MetricsTest.
+  Master
+  Slave
+  MasterAuthenticationEnabled
+  AgentAuthenticationEnabled
+  MasterAuthorizationEnabled
+  AgentAuthorizationEnabled
+ModuleTest.
+  ExampleModuleLoadTest
+  ModulesDirTest
+  ParameterWithoutValue
+  ParameterWithInvalidValue
+  ParameterWithoutKey
+  ParameterWithInvalidKey
+  ValidParameters
+  OverrideJson
+  JsonParseTest
+  ExampleModuleUnloadTest
+  InvalidModuleKind
+  ModuleKindMismatch
+  AuthorInfoTest
+  LibraryNameWithoutExtension
+  EmptyLibraryFilename
+  EmptyModuleName
+  UnknownLibraryTest
+  UnknownModuleTest
+  UnknownModuleInstantiationTest
+  NonModuleLibrary
+  LoadSameModuleTwice
+  DuplicateModulesWithDifferentParameters
+  DuplicateModuleInDifferentLibraries
+  DifferentApiVersion
+  NewerModuleLibrary
+  OlderModuleLibrary
+OversubscriptionTest.
+  FetchResourceUsage
+  ForwardUpdateSlaveMessage
+  RevocableOffer
+  RescindRevocableOfferWithIncreasedRevocable
+  RescindRevocableOfferWithDecreasedRevocable
+  FixedResourceEstimator
+  QoSFetchResourceUsage
+  Reregistration
+  ReceiveQoSCorrection
+  QoSCorrectionKill
+  QoSCorrectionKillPartitionAware
+  UpdateAllocatorOnSchedulerFailover
+  RemoveCapabilitiesOnSchedulerFailover
+  LoadQoSController
+PartitionTest.
+  PartitionedSlave
+  ReregisterSlavePartitionAware
+  ReregisterSlaveNotPartitionAware
+  PartitionedSlaveReregistrationMasterFailover
+  PartitionedSlaveOrphanedTask
+  DisconnectedFramework
+  SpuriousSlaveReregistration
+  PartitionedSlaveStatusUpdates
+  PartitionedSlaveExitedExecutor
+  TaskCompletedOnPartitionedAgent
+  PartitionAwareTaskCompletedOnPartitionedAgent
+  RegistryGcByCount
+  RegistryGcByCountManySlaves
+  RegistryGcByAge
+  RegistryGcRace
+  FailHealthChecksTwice
+OneWayPartitionTest.
+  MasterToSlave
+  MasterToScheduler
+PathsTest.
+  CreateExecutorDirectory
+  ParseExecutorRunPath
+  Meta
+  ProvisionerDir
+  BootId
+  Slave
+  Framework
+  Executor
+  LibProcessPid
+  Task
+  PersistentVolume
+PersistentVolumeEndpointsTest.
+  StaticReservation
+  DynamicReservation
+  DynamicReservationRoleMismatch
+  UnreserveVolumeResources
+  InvalidVolume
+  VolumeExceedsReservedSize
+  DeleteNonExistentVolume
+  NoHeader
+  BadCredentials
+  GoodCreateAndDestroyACL
+  GoodCreateACLMultipleRoles
+  BadCreateAndDestroyACL
+  BadCreateACLMultipleRoles
+  GoodCreateAndDestroyACLBadCredential
+  NoAuthentication
+  NoSlaveId
+  NoVolumes
+  OfferCreateThenEndpointRemove
+  EndpointCreateThenOfferRemove
+  ReserveAndSlaveRemoval
+  SlavesEndpointFullResources
+ProtobufIOTest.
+  Basic
+  Append
+  RepeatedPtrField
+ProtobufUtilTest.
+  GetRoles
+  InjectAndStripAllocationInfoInOfferOperation
+  FrameworkCapabilities
+  AgentCapabilities
+RateLimitingTest.
+  NoRateLimiting
+  RateLimitingEnabled
+  DifferentPrincipalFrameworks
+  SamePrincipalFrameworks
+  SchedulerFailover
+  CapacityReached
+ReconciliationTest.
+  TaskStateMismatch
+  TaskStateMatch
+  UnknownSlave
+  UnknownTask
+  UnknownTaskPartitionAware
+  UnknownKillTask
+  RecoveredAgent
+  RecoveredAgentReregistrationInProgress
+  RemovalInProgress
+  ImplicitNonTerminalTask
+  ImplicitTerminalTask
+  PendingTask
+  UnacknowledgedTerminalTask
+  ReconcileStatusUpdateTaskState
+  PartitionedAgentThenMasterFailover
+RegistrarTest.
+  Recover
+  Admit
+  MarkReachable
+  MarkUnreachable
+  PruneUnreachable
+  Remove
+  UpdateMaintenanceSchedule
+  StartMaintenance
+  StopMaintenance
+  UpdateQuota
+  RemoveQuota
+  UpdateWeights
+  Bootstrap
+  FetchTimeout
+  StoreTimeout
+  Abort
+  Authentication
+ReservationEndpointsTest.
+  AvailableResources
+  ReserveOfferedResources
+  UnreserveOfferedResources
+  ReserveAvailableAndOfferedResources
+  UnreserveAvailableAndOfferedResources
+  LabeledResources
+  InvalidResource
+  InsufficientResources
+  NoHeader
+  BadCredentials
+  GoodReserveAndUnreserveACL
+  GoodReserveACLMultipleRoles
+  BadReserveACL
+  BadUnreserveACL
+  BadReserveACLMultipleRoles
+  NoSlaveId
+  NoResources
+  NonMatchingPrincipal
+  ReserveAndUnreserveNoAuthentication
+  DifferentPrincipalsSameRole
+  AgentStateEndpointResources
+ReservationTest.
+  ReserveThenUnreserve
+  ReserveTwiceWithDoubleValue
+  ReserveAndLaunchThenUnreserve
+  ReserveShareWithinRole
+  DropReserveTooLarge
+  DropReserveStaticReservation
+  SendingCheckpointResourcesMessage
+  ResourcesCheckpointing
+  MasterFailover
+  CompatibleCheckpointedResources
+  CompatibleCheckpointedResourcesWithPersistentVolumes
+  IncompatibleCheckpointedResources
+  GoodACLReserveThenUnreserve
+  BadACLDropReserve
+  BadACLDropUnreserve
+  ACLMultipleOperations
+  WithoutAuthenticationWithoutPrincipal
+  WithoutAuthenticationWithPrincipal
+  DropReserveWithInvalidRole
+  PreventUnreservingAlienResources
+ResourceOffersTest.
+  ResourceOfferWithMultipleSlaves
+  ResourcesGetReofferedAfterFrameworkStops
+  ResourcesGetReofferedWhenUnused
+  ResourcesGetReofferedAfterTaskInfoError
+  Request
+ResourcesTest.
+  Parsing
+  ParsingWithRoles
+  ParseError
+  ParsingFromJSON
+  ParsingFromJSONWithRoles
+  ParsingFromJSONError
+  Resources
+  Printing
+  PrintingExtendedAttributes
+  PrintingScalarPrecision
+  InitializedIsEmpty
+  BadResourcesNotAllocatable
+  ScalarEquals
+  ScalarSubset
+  ScalarSubset2
+  ScalarAddition
+  ScalarAddition2
+  ScalarSubtraction
+  ScalarSubtraction2
+  RangesEquals
+  RangesSubset
+  RangesAddition
+  RangesAddition2
+  RangesAddition3
+  RangesAddition4
+  RangesSubtraction
+  RangesSubtraction1
+  RangesSubtraction2
+  RangesSubtraction3
+  RangesSubtraction4
+  RangesSubtraction5
+  RangesSubtraction6
+  SetEquals
+  SetSubset
+  SetAddition
+  SetSubtraction
+  EmptyUnequal
+  Reservations
+  FlattenRoles
+  Find
+  Get
+  Names
+  Types
+  PrecisionSimple
+  PrecisionManyOps
+  PrecisionManyConsecutiveOps
+  PrecisionLost
+  PrecisionRounding
+  Count
+  Evolve
+ReservedResourcesTest.
+  Validation
+  Equals
+  AdditionStaticallyReserved
+  AdditionDynamicallyReservedWithoutLabels
+  AdditionDynamicallyReservedWithSameLabels
+  AdditionDynamicallyReservedWithDistinctLabels
+  Subtraction
+  Contains
+DiskResourcesTest.
+  Validation
+  Equals
+  DiskSourceEquals
+  Addition
+  DiskSourceAddition
+  Subtraction
+  DiskSourceSubtraction
+  Contains
+  SourceContains
+  FilterPersistentVolumes
+ResourcesOperationTest.
+  ReserveResources
+  UnreserveResources
+  CreatePersistentVolume
+  StrippedResourcesVolume
+  StrippedResourcesAllocated
+  StrippedResourcesReserved
+  StrippedResourcesNonScalar
+  CreatePersistentVolumeFromMount
+  CreateSharedPersistentVolume
+  FlattenResources
+RevocableResourceTest.
+  Equals
+  Addition
+  Subtraction
+  Contains
+  Filter
+SharedResourcesTest.
+  Printing
+  ScalarAdditionShared
+  ScalarSubtractionShared
+  ScalarSharedCompoundExpressions
+  ScalarNonEqualSharedOperations
+  ScalarSharedAndNonSharedOperations
+  Filter
+AllocatedResourcesTest.
+  Equality
+  Contains
+  Addition
+  Subtraction
+  Allocations
+RoleTest.
+  BadRegister
+  ImplicitRoleRegister
+  ImplicitRoleStaticReservation
+  EndpointEmpty
+  EndpointNoFrameworks
+  EndpointImplicitRolesWeights
+  EndpointImplicitRolesQuotas
+  AddAndRemoveFrameworkWithMultipleRoles
+  Parsing
+  Validate
+  EndpointBadAuthentication
+MesosSchedulerDriverTest.
+  MetricsEndpoint
+  DropAckIfStopCalledBeforeAbort
+  ExplicitAcknowledgements
+  ExplicitAcknowledgementsMasterGeneratedUpdate
+  ExplicitAcknowledgementsUnsetSlaveID
+SchedulerDriverEventTest.
+  Subscribed
+  SubscribedDisconnection
+  SubscribedMasterFailover
+  SubscribedSchedulerFailover
+  Offers
+  Rescind
+  Update
+  Message
+  Failure
+  Error
+SchedulerHttpApiTest.
+  AuthenticationRequired
+  NoContentType
+  ValidJsonButInvalidProtobuf
+  GetRequest
+SlaveAuthorizerTest/0.  # TypeParam = mesos::internal::tests::Module<mesos::Authorizer, (mesos::internal::tests::ModuleID)8>
+  FilterStateEndpoint
+  ViewFlags
+  AuthorizeRunTaskOnAgent
+SlaveAuthorizerTest/1.  # TypeParam = mesos::internal::LocalAuthorizer
+  FilterStateEndpoint
+  ViewFlags
+  AuthorizeRunTaskOnAgent
+SlaveStateTest.
+  CheckpointString
+  CheckpointProtobufMessage
+  CheckpointRepeatedProtobufMessages
+SlaveRecoveryTest/0.  # TypeParam = mesos::internal::slave::MesosContainerizer
+  RecoverSlaveState
+  RecoverStatusUpdateManager
+  DISABLED_ReconnectHTTPExecutor
+  ReconnectExecutor
+  DISABLED_RecoverUnregisteredHTTPExecutor
+  RecoverUnregisteredExecutor
+  KillTaskUnregisteredExecutor
+  RecoverTerminatedHTTPExecutor
+  RecoverTerminatedExecutor
+  DISABLED_RecoveryTimeout
+  RecoverCompletedExecutor
+  DISABLED_CleanupHTTPExecutor
+  CleanupExecutor
+  RemoveNonCheckpointingFramework
+  NonCheckpointingFramework
+  DISABLED_KillTaskWithHTTPExecutor
+  KillTask
+  Reboot
+  GCExecutor
+  ShutdownSlave
+  ShutdownSlaveSIGUSR1
+  RegisterDisconnectedSlave
+  ReconcileKillTask
+  ReconcileShutdownFramework
+  ReconcileTasksMissingFromSlave
+  SchedulerFailover
+  MasterFailover
+  MultipleFrameworks
+  MultipleSlaves
+  RestartBeforeContainerizerLaunch
+MesosContainerizerSlaveRecoveryTest.
+  ResourceStatistics
+AgentValidationTest.
+  ContainerID
+  Secret
+  Environment
+AgentCallValidationTest.
+  LaunchNestedContainer
+  WaitNestedContainer
+  KillNestedContainer
+  RemoveNestedContainer
+  LaunchNestedContainerSession
+SlaveTest.
+  Shutdown
+  DuplicateTerminalUpdateBeforeAck
+  ShutdownUnregisteredExecutor
+  ExecutorTimeoutCausedBySlowFetch
+  RemoveUnregisteredTerminatedExecutor
+  CommandTaskWithArguments
+  CommandTaskWithKillPolicy
+  GetExecutorInfo
+  GetExecutorInfoForTaskWithContainer
+  IgnoreNonLeaderStatusUpdateAcknowledgement
+  MetricsInMetricsEndpoint
+  MetricsSlaveLaunchErrors
+  StateEndpoint
+  StateEndpointUnavailableDuringRecovery
+  HTTPEndpointsBadAuthentication
+  ReadonlyHTTPEndpointsNoAuthentication
+  StatisticsEndpointNoExecutor
+  StatisticsEndpointMissingStatistics
+  StatisticsEndpointGetResourceUsageFailed
+  StatisticsEndpointRunningExecutor
+  StatisticsEndpointAuthentication
+  ContainersEndpointNoExecutor
+  ContainersEndpoint
+  DISABLED_TerminatingSlaveDoesNotReregister
+  TerminalTaskContainerizerUpdateFailsWithLost
+  TerminalTaskContainerizerUpdateFailsWithGone
+  ContainerUpdatedBeforeTaskReachesExecutor
+  TaskLaunchContainerizerUpdateFails
+  PingTimeoutNoPings
+  PingTimeoutSomePings
+  RateLimitSlaveRemoval
+  CancelSlaveRemoval
+  HealthCheckUnregisterRace
+  UnreachableThenUnregisterRace
+  UnregisterThenUnreachableRace
+  KillTaskBetweenRunTaskParts
+  KillTaskUnregisteredExecutor
+  KillTaskUnregisteredHTTPExecutor
+  ReregisterWithStatusUpdateTaskState
+  ContainerizerUsageFailure
+  DiscoveryInfoAndPorts
+  ExecutorLabels
+  TaskLabels
+  TaskStatusLabels
+  TaskStatusContainerStatus
+  ExecutorEnvironmentVariables
+  TotalSlaveResourcesIncludedInUsage
+  CheckpointedResourcesIncludedInUsage
+  HTTPScheduler
+  HTTPSchedulerLiveUpgrade
+  HTTPSchedulerSlaveRestart
+  ExecutorShutdownGracePeriod
+  RunTaskGroup
+  KillTaskGroupBetweenRunTaskParts
+  DefaultExecutorCommandInfo
+  KillQueuedTaskGroup
+  MaxCompletedExecutorsPerFrameworkFlag
+SorterTest.
+  DRFSorter
+  WDRFSorter
+  WDRFSorterUpdateWeight
+  CountAllocations
+  SplitResourceShares
+  UpdateAllocation
+  MultipleSlaves
+  MultipleSlavesUpdateAllocation
+  UpdateTotal
+  MultipleSlavesUpdateTotal
+  RevocableResources
+  SharedResources
+  SameDominantSharedResourcesAcrossClients
+  SameSharedResourcesSameClient
+  SharedResourcesUnallocated
+  RemoveSharedResources
+InMemoryStateTest.
+  FetchAndStoreAndFetch
+  FetchAndStoreAndStoreAndFetch
+  FetchAndStoreAndStoreFailAndFetch
+  FetchAndStoreAndExpungeAndFetch
+  FetchAndStoreAndExpungeAndExpunge
+  FetchAndStoreAndExpungeAndStoreAndFetch
+  Names
+LevelDBStateTest.
+  FetchAndStoreAndFetch
+  FetchAndStoreAndStoreAndFetch
+  FetchAndStoreAndStoreFailAndFetch
+  FetchAndStoreAndExpungeAndFetch
+  FetchAndStoreAndExpungeAndExpunge
+  FetchAndStoreAndExpungeAndStoreAndFetch
+  Names
+LogStateTest.
+  FetchAndStoreAndFetch
+  FetchAndStoreAndStoreAndFetch
+  FetchAndStoreAndStoreFailAndFetch
+  FetchAndStoreAndExpungeAndFetch
+  FetchAndStoreAndExpungeAndExpunge
+  FetchAndStoreAndExpungeAndStoreAndFetch
+  Names
+  Timeout
+  Diff
+ZooKeeperStateTest.
+  FetchAndStoreAndFetch
+  FetchAndStoreAndStoreAndFetch
+  FetchAndStoreAndStoreFailAndFetch
+  FetchAndStoreAndExpungeAndFetch
+  FetchAndStoreAndExpungeAndExpunge
+  FetchAndStoreAndExpungeAndStoreAndFetch
+  Names
+StatusUpdateManagerTest.
+  CheckpointStatusUpdate
+  RetryStatusUpdate
+  IgnoreDuplicateStatusUpdateAck
+  IgnoreUnexpectedStatusUpdateAck
+  DuplicateTerminalUpdateAfterAck
+  DuplicateUpdateBeforeAck
+  LatestTaskState
+  DuplicatedTerminalStatusUpdate
+TeardownTest.
+  Success
+  BadCredentials
+  GoodACLs
+  GoodDeprecatedACLs
+  BadACLs
+  NoFrameworkId
+  NoHeader
+  RecoveredFrameworkAfterMasterFailover
+UpgradeTest.
+  ReregisterOldAgentWithMultiRoleMaster
+  UpgradeSlaveIntoMultiRole
+  MultiRoleSchedulerUpgrade
+UriTest.
+  SchemeFile
+  SchemeHttp
+CurlFetcherPluginTest.
+  CURL_ValidUri
+  CURL_InvalidUri
+  CURL_InvokeFetchByName
+HadoopFetcherPluginTest.
+  FetchExistingFile
+  FetchNonExistingFile
+  InvokeFetchByName
+DockerFetcherPluginTest.
+  INTERNET_CURL_FetchManifest
+  INTERNET_CURL_FetchBlob
+  INTERNET_CURL_FetchImage
+  INTERNET_CURL_InvokeFetchByName
+CopyFetcherPluginTest.
+  FetchExistingFile
+  FetchNonExistingFile
+  InvokeFetchByName
+ValuesTest.
+  ValidInput
+  InvalidInput
+  SetSubtraction
+  RangesParse
+  RangesCoalesce
+  RangesCoalesceParse
+  AddRangeCoalesce
+  RangesToIntervalSet
+  IntervalSetToRanges
+  RangesAddition
+  RangesSubtraction
+ZooKeeperURLTest.
+  URL
+TarTest.
+  File
+  Directory
+  ChangeDirectory
+  BZIP2CompressFile
+  GZIPChangeDirectory
+ShasumTest.
+  SHA512SimpleFile
+CompressionTest.
+  GZIPDecompressTarFile
+HTTPTest.
+  ModelTask
+  ModelResources
+HTTP.
+  ModelRoleResources
+  SerializeNetworkInfo
+RecordIOReaderTest.
+  EndOfFile
+  DecodingFailure
+  PipeFailure
+RecordIOTransformTest.
+  EndOfFile
+  ReaderWriterEndFail
+  WriterReadEndFail
+TypeUtilsTest.
+  TaskGroupEquality
+AppcSpecTest.
+  ValidateImageManifest
+  ValidateLayout
+  ValidateImageManifestWithNullExec
+ComposingContainerizerTest.
+  DestroyDuringUnsupportedLaunchLoop
+  DestroyDuringSupportedLaunchLoop
+  DestroyAfterLaunchLoop
+  DestroyUnknownContainer
+  WaitUnknownContainer
+ContainerizerResourcesTest.
+  AutoResources
+  AutoResourcesZero
+  AutoResourcesNonZero
+DockerSpecTest.
+  ParseImageReference
+  GetRegistrySpec
+  ParseDockerConfig
+  ParseDockercfg
+  ParseAuthUrl
+  ParseV1ImageManifest
+  ParseV2ImageManifest
+  ParseInvalidV2ImageManifest
+  ValidateV2ImageManifestFsLayersNonEmpty
+  ValidateV2ImageManifestSignaturesNonEmpty
+DockerImageTest.
+  ParseInspectonImage
+IOSwitchboardServerTest.
+  RedirectLog
+  AttachOutput
+  SendHeartbeat
+  AttachInput
+  ReceiveHeartbeat
+IOSwitchboardTest.
+  ContainerAttach
+  OutputRedirectionWithTTY
+  KillSwitchboardContainerDestroyed
+  DISABLED_RecoverThenKillSwitchboardContainerDestroyed
+  ContainerAttachAfterSlaveRestart
+MesosContainerizerTest.
+  Launch
+  Destroy
+  StatusWithContainerID
+MesosContainerizerIsolatorPreparationTest.
+  ScriptSucceeds
+  ScriptFails
+  MultipleScripts
+  ExecutorEnvironmentVariable
+MesosContainerizerExecuteTest.
+  IoRedirection
+MesosContainerizerDestroyTest.
+  DestroyWhileFetching
+  DestroyWhilePreparing
+  DestroyUnknownContainer
+  LauncherDestroyFailure
+MesosContainerizerProvisionerTest.
+  ProvisionFailed
+  DestroyWhileProvisioning
+  IsolatorCleanupBeforePrepare
+MesosContainerizerRecoverTest.
+  SkipRecoverNonMesosContainers
+MesosLauncherStatusTest.
+  ExecutorPIDTest
+MesosContainerizerWaitTest.
+  WaitUnknownContainer
+MesosContainerizerPathsTest.
+  BuildPathPrefixMode
+  BuildPathSuffixMode
+  BuildPathJoinMode
+OCISpecTest.
+  ParseDescriptor
+  ParseManifestList
+  ParseManifest
+  ParseConfiguration
+PosixRLimitsIsolatorTest.
+  InvalidLimits
+  UnsetLimits
+  BothSoftAndHardLimitSet
+  TaskExceedingLimit
+AppcStoreTest.
+  Recover
+ProvisionerAppcTest.
+  Recover
+  RecoverNestedContainer
+  RecoverNestedContainerNoParentImage
+AppcImageFetcherTest.
+  CURL_SimpleHttpFetch
+  SimpleFileFetch
+ProvisionerDockerLocalStoreTest.
+  LocalStoreTestWithTar
+  MetadataManagerInitialization
+  MissingLayer
+  PullingSameImageSimutanuously
+ProvisionerPathTest.
+  ListProvisionerContainers
+VolumeSandboxPathIsolatorTest.
+  SharedVolume
+LdcacheTest.
+  Parse
+Ldd.
+  BinSh
+  EmptyCache
+  MissingFile
+NetClsHandleManagerTest.
+  AllocateFreeHandles
+  AllocateInvalidPrimary
+  ReserveHandles
+  SecondaryHandleRange
+DevicesTest.
+  Parse
+CniSpecTest.
+  GenerateResolverConfig
+FsTest.
+  SupportedFS
+  Type
+  MountTableRead
+  MountTableHasOption
+  MountInfoTableParse
+  DISABLED_MountInfoTableRead
+  MountInfoTableReadSorted
+  MountInfoTableReadSortedParentOfSelf
+NestedMesosContainerizerTest.
+  NestedContainerID
+PerfTest.
+  Parse
+  Version
+GroupTest.
+  Group
+  GroupJoinWithDisconnect
+  GroupDataWithDisconnect
+  GroupDataWithRemovedMembership
+  GroupCancelWithDisconnect
+  GroupWatchWithSessionExpiration
+  MultipleGroups
+  GroupPathWithRestrictivePerms
+  RetryableErrors
+  LabelledGroup
+  ConnectTimer
+  TimerCleanup
+RegistrarZooKeeperTest.
+  TaskRunning
+ZooKeeperTest.
+  Auth
+  SessionTimeoutNegotiation
+  Create
+  LeaderDetector
+  LeaderDetectorTimeoutHandling
+  LeaderDetectorCancellationHandling
+  LeaderContender
+ContentType/MasterAPITest.
+  GetAgents/0  # GetParam() = application/x-protobuf
+  GetAgents/1  # GetParam() = application/json
+  GetFlags/0  # GetParam() = application/x-protobuf
+  GetFlags/1  # GetParam() = application/json
+  GetFrameworks/0  # GetParam() = application/x-protobuf
+  GetFrameworks/1  # GetParam() = application/json
+  GetHealth/0  # GetParam() = application/x-protobuf
+  GetHealth/1  # GetParam() = application/json
+  GetVersion/0  # GetParam() = application/x-protobuf
+  GetVersion/1  # GetParam() = application/json
+  GetMetrics/0  # GetParam() = application/x-protobuf
+  GetMetrics/1  # GetParam() = application/json
+  GetExecutors/0  # GetParam() = application/x-protobuf
+  GetExecutors/1  # GetParam() = application/json
+  GetState/0  # GetParam() = application/x-protobuf
+  GetState/1  # GetParam() = application/json
+  GetTasksNoRunningTask/0  # GetParam() = application/x-protobuf
+  GetTasksNoRunningTask/1  # GetParam() = application/json
+  GetTasks/0  # GetParam() = application/x-protobuf
+  GetTasks/1  # GetParam() = application/json
+  GetLoggingLevel/0  # GetParam() = application/x-protobuf
+  GetLoggingLevel/1  # GetParam() = application/json
+  SetLoggingLevel/0  # GetParam() = application/x-protobuf
+  SetLoggingLevel/1  # GetParam() = application/json
+  ListFiles/0  # GetParam() = application/x-protobuf
+  ListFiles/1  # GetParam() = application/json
+  ListFilesInvalidPath/0  # GetParam() = application/x-protobuf
+  ListFilesInvalidPath/1  # GetParam() = application/json
+  GetRoles/0  # GetParam() = application/x-protobuf
+  GetRoles/1  # GetParam() = application/json
+  GetMaster/0  # GetParam() = application/x-protobuf
+  GetMaster/1  # GetParam() = application/json
+  ReserveResources/0  # GetParam() = application/x-protobuf
+  ReserveResources/1  # GetParam() = application/json
+  UnreserveResources/0  # GetParam() = application/x-protobuf
+  UnreserveResources/1  # GetParam() = application/json
+  UpdateAndGetMaintenanceSchedule/0  # GetParam() = application/x-protobuf
+  UpdateAndGetMaintenanceSchedule/1  # GetParam() = application/json
+  GetMaintenanceStatus/0  # GetParam() = application/x-protobuf
+  GetMaintenanceStatus/1  # GetParam() = application/json
+  StartAndStopMaintenance/0  # GetParam() = application/x-protobuf
+  StartAndStopMaintenance/1  # GetParam() = application/json
+  SubscribeAgentEvents/0  # GetParam() = application/x-protobuf
+  SubscribeAgentEvents/1  # GetParam() = application/json
+  GetRecoveredAgents/0  # GetParam() = application/x-protobuf
+  GetRecoveredAgents/1  # GetParam() = application/json
+  Subscribe/0  # GetParam() = application/x-protobuf
+  Subscribe/1  # GetParam() = application/json
+  GetQuota/0  # GetParam() = application/x-protobuf
+  GetQuota/1  # GetParam() = application/json
+  SetQuota/0  # GetParam() = application/x-protobuf
+  SetQuota/1  # GetParam() = application/json
+  RemoveQuota/0  # GetParam() = application/x-protobuf
+  RemoveQuota/1  # GetParam() = application/json
+  CreateAndDestroyVolumes/0  # GetParam() = application/x-protobuf
+  CreateAndDestroyVolumes/1  # GetParam() = application/json
+  GetWeights/0  # GetParam() = application/x-protobuf
+  GetWeights/1  # GetParam() = application/json
+  UpdateWeights/0  # GetParam() = application/x-protobuf
+  UpdateWeights/1  # GetParam() = application/json
+  ReadFile/0  # GetParam() = application/x-protobuf
+  ReadFile/1  # GetParam() = application/json
+  ReadFileInvalidPath/0  # GetParam() = application/x-protobuf
+  ReadFileInvalidPath/1  # GetParam() = application/json
+ContentType/AgentAPITest.
+  GetFlags/0  # GetParam() = application/x-protobuf
+  GetFlags/1  # GetParam() = application/json
+  GetHealth/0  # GetParam() = application/x-protobuf
+  GetHealth/1  # GetParam() = application/json
+  GetVersion/0  # GetParam() = application/x-protobuf
+  GetVersion/1  # GetParam() = application/json
+  GetMetrics/0  # GetParam() = application/x-protobuf
+  GetMetrics/1  # GetParam() = application/json
+  GetLoggingLevel/0  # GetParam() = application/x-protobuf
+  GetLoggingLevel/1  # GetParam() = application/json
+  SetLoggingLevel/0  # GetParam() = application/x-protobuf
+  SetLoggingLevel/1  # GetParam() = application/json
+  ListFiles/0  # GetParam() = application/x-protobuf
+  ListFiles/1  # GetParam() = application/json
+  ListFilesInvalidPath/0  # GetParam() = application/x-protobuf
+  ListFilesInvalidPath/1  # GetParam() = application/json
+  GetContainers/0  # GetParam() = application/x-protobuf
+  GetContainers/1  # GetParam() = application/json
+  ReadFile/0  # GetParam() = application/x-protobuf
+  ReadFile/1  # GetParam() = application/json
+  ReadFileInvalidPath/0  # GetParam() = application/x-protobuf
+  ReadFileInvalidPath/1  # GetParam() = application/json
+  GetFrameworks/0  # GetParam() = application/x-protobuf
+  GetFrameworks/1  # GetParam() = application/json
+  GetExecutors/0  # GetParam() = application/x-protobuf
+  GetExecutors/1  # GetParam() = application/json
+  GetTasks/0  # GetParam() = application/x-protobuf
+  GetTasks/1  # GetParam() = application/json
+  GetAgent/0  # GetParam() = application/x-protobuf
+  GetAgent/1  # GetParam() = application/json
+  GetState/0  # GetParam() = application/x-protobuf
+  GetState/1  # GetParam() = application/json
+  NestedContainerWaitNotFound/0  # GetParam() = application/x-protobuf
+  NestedContainerWaitNotFound/1  # GetParam() = application/json
+  NestedContainerKillNotFound/0  # GetParam() = application/x-protobuf
+  NestedContainerKillNotFound/1  # GetParam() = application/json
+  NestedContainerLaunchFalse/0  # GetParam() = application/x-protobuf
+  NestedContainerLaunchFalse/1  # GetParam() = application/json
+  NestedContainerLaunch/0  # GetParam() = application/x-protobuf
+  NestedContainerLaunch/1  # GetParam() = application/json
+  TwoLevelNestedContainerLaunch/0  # GetParam() = application/x-protobuf
+  TwoLevelNestedContainerLaunch/1  # GetParam() = application/json
+  LaunchNestedContainerSessionAttachFailure/0  # GetParam() = application/x-protobuf
+  LaunchNestedContainerSessionAttachFailure/1  # GetParam() = application/json
+  LaunchNestedContainerSession/0  # GetParam() = application/x-protobuf
+  LaunchNestedContainerSession/1  # GetParam() = application/json
+  LaunchNestedContainerSessionUnauthorized/0  # GetParam() = application/x-protobuf
+  LaunchNestedContainerSessionUnauthorized/1  # GetParam() = application/json
+  LaunchNestedContainerSessionWithTTY/0  # GetParam() = application/x-protobuf
+  LaunchNestedContainerSessionWithTTY/1  # GetParam() = application/json
+  LaunchNestedContainerSessionDisconnected/0  # GetParam() = application/x-protobuf
+  LaunchNestedContainerSessionDisconnected/1  # GetParam() = application/json
+  AttachContainerOutputFailure/0  # GetParam() = application/x-protobuf
+  AttachContainerOutputFailure/1  # GetParam() = application/json
+  AttachContainerInputAuthorization/0  # GetParam() = application/x-protobuf
+  AttachContainerInputAuthorization/1  # GetParam() = application/json
+  DefaultAccept/0  # GetParam() = application/x-protobuf
+  DefaultAccept/1  # GetParam() = application/json
+ContentType/AgentAPIStreamingTest.
+  DISABLED_AttachContainerInput/0  # GetParam() = application/x-protobuf
+  DISABLED_AttachContainerInput/1  # GetParam() = application/json
+  AttachInputToNestedContainerSession/0  # GetParam() = application/x-protobuf
+  AttachInputToNestedContainerSession/1  # GetParam() = application/json
+HTTPCommandExecutor/CommandExecutorTest.
+  NoTaskKillingCapability/0  # GetParam() = false
+  NoTaskKillingCapability/1  # GetParam() = true
+  TaskKillingCapability/0  # GetParam() = false
+  TaskKillingCapability/1  # GetParam() = true
+  NoTransitionFromKillingToRunning/0  # GetParam() = false
+  NoTransitionFromKillingToRunning/1  # GetParam() = true
+MesosContainerizer/DefaultExecutorTest.
+  TaskRunning/0  # GetParam() = "mesos"
+  KillTask/0  # GetParam() = "mesos"
+  KillTaskGroupOnTaskFailure/0  # GetParam() = "mesos"
+  TaskUsesExecutor/0  # GetParam() = "mesos"
+  CommitSuicideOnTaskFailure/0  # GetParam() = "mesos"
+  CommitSuicideOnKillTask/0  # GetParam() = "mesos"
+  ReservedResources/0  # GetParam() = "mesos"
+ContentType/ExecutorHttpApiTest.
+  MalformedContent/0  # GetParam() = application/x-protobuf
+  MalformedContent/1  # GetParam() = application/json
+  UnsupportedContentMediaType/0  # GetParam() = application/x-protobuf
+  UnsupportedContentMediaType/1  # GetParam() = application/json
+  MessageFromUnknownFramework/0  # GetParam() = application/x-protobuf
+  MessageFromUnknownFramework/1  # GetParam() = application/json
+  DefaultAccept/0  # GetParam() = application/x-protobuf
+  DefaultAccept/1  # GetParam() = application/json
+  NoAcceptHeader/0  # GetParam() = application/x-protobuf
+  NoAcceptHeader/1  # GetParam() = application/json
+  NotAcceptable/0  # GetParam() = application/x-protobuf
+  NotAcceptable/1  # GetParam() = application/json
+  ValidProtobufInvalidCall/0  # GetParam() = application/x-protobuf
+  ValidProtobufInvalidCall/1  # GetParam() = application/json
+  StatusUpdateCallFailedValidation/0  # GetParam() = application/x-protobuf
+  StatusUpdateCallFailedValidation/1  # GetParam() = application/json
+  Subscribe/0  # GetParam() = application/x-protobuf
+  Subscribe/1  # GetParam() = application/json
+QuotaSwitch/HierarchicalAllocatorTestWithParam.
+  AllocateSharedResources/0  # GetParam() = false
+  AllocateSharedResources/1  # GetParam() = true
+DiskResource/PersistentVolumeTest.
+  CreateAndDestroyPersistentVolumes/0  # GetParam() = 0
+  CreateAndDestroyPersistentVolumes/1  # GetParam() = 1
+  ResourcesCheckpointing/0  # GetParam() = 0
+  ResourcesCheckpointing/1  # GetParam() = 1
+  PreparePersistentVolume/0  # GetParam() = 0
+  PreparePersistentVolume/1  # GetParam() = 1
+  MasterFailover/0  # GetParam() = 0
+  MasterFailover/1  # GetParam() = 1
+  IncompatibleCheckpointedResources/0  # GetParam() = 0
+  IncompatibleCheckpointedResources/1  # GetParam() = 1
+  AccessPersistentVolume/0  # GetParam() = 0
+  AccessPersistentVolume/1  # GetParam() = 1
+  SharedPersistentVolumeMultipleTasks/0  # GetParam() = 0
+  SharedPersistentVolumeMultipleTasks/1  # GetParam() = 1
+  SharedPersistentVolumeRescindOnDestroy/0  # GetParam() = 0
+  SharedPersistentVolumeRescindOnDestroy/1  # GetParam() = 1
+  SharedPersistentVolumeMasterFailover/0  # GetParam() = 0
+  SharedPersistentVolumeMasterFailover/1  # GetParam() = 1
+  DestroyPersistentVolumeMultipleTasks/0  # GetParam() = 0
+  DestroyPersistentVolumeMultipleTasks/1  # GetParam() = 1
+  SharedPersistentVolumeMultipleIterations/0  # GetParam() = 0
+  SharedPersistentVolumeMultipleIterations/1  # GetParam() = 1
+  SlaveRecovery/0  # GetParam() = 0
+  SlaveRecovery/1  # GetParam() = 1
+  GoodACLCreateThenDestroy/0  # GetParam() = 0
+  GoodACLCreateThenDestroy/1  # GetParam() = 1
+  GoodACLNoPrincipal/0  # GetParam() = 0
+  GoodACLNoPrincipal/1  # GetParam() = 1
+  BadACLNoPrincipal/0  # GetParam() = 0
+  BadACLNoPrincipal/1  # GetParam() = 1
+  BadACLDropCreateAndDestroy/0  # GetParam() = 0
+  BadACLDropCreateAndDestroy/1  # GetParam() = 1
+ContentType/SchedulerHttpApiTest.
+  MalformedContent/0  # GetParam() = "application/x-protobuf"
+  MalformedContent/1  # GetParam() = "application/json"
+  UnsupportedContentMediaType/0  # GetParam() = "application/x-protobuf"
+  UnsupportedContentMediaType/1  # GetParam() = "application/json"
+  Subscribe/0  # GetParam() = "application/x-protobuf"
+  Subscribe/1  # GetParam() = "application/json"
+  RejectFrameworkWithInvalidRole/0  # GetParam() = "application/x-protobuf"
+  RejectFrameworkWithInvalidRole/1  # GetParam() = "application/json"
+  SubscribeWithStreamId/0  # GetParam() = "application/x-protobuf"
+  SubscribeWithStreamId/1  # GetParam() = "application/json"
+  SubscribedOnRetry/0  # GetParam() = "application/x-protobuf"
+  SubscribedOnRetry/1  # GetParam() = "application/json"
+  UpdatePidToHttpScheduler/0  # GetParam() = "application/x-protobuf"
+  UpdatePidToHttpScheduler/1  # GetParam() = "application/json"
+  UpdateHttpToPidScheduler/0  # GetParam() = "application/x-protobuf"
+  UpdateHttpToPidScheduler/1  # GetParam() = "application/json"
+  NotAcceptable/0  # GetParam() = "application/x-protobuf"
+  NotAcceptable/1  # GetParam() = "application/json"
+  NoAcceptHeader/0  # GetParam() = "application/x-protobuf"
+  NoAcceptHeader/1  # GetParam() = "application/json"
+  DefaultAccept/0  # GetParam() = "application/x-protobuf"
+  DefaultAccept/1  # GetParam() = "application/json"
+  TeardownWithoutStreamId/0  # GetParam() = "application/x-protobuf"
+  TeardownWithoutStreamId/1  # GetParam() = "application/json"
+  TeardownWrongStreamId/0  # GetParam() = "application/x-protobuf"
+  TeardownWrongStreamId/1  # GetParam() = "application/json"
+  MalformedUUID/0  # GetParam() = "application/x-protobuf"
+  MalformedUUID/1  # GetParam() = "application/json"
+ContentType/SchedulerTest.
+  Subscribe/0  # GetParam() = application/x-protobuf
+  Subscribe/1  # GetParam() = application/json
+  SchedulerFailover/0  # GetParam() = application/x-protobuf
+  SchedulerFailover/1  # GetParam() = application/json
+  MasterFailover/0  # GetParam() = application/x-protobuf
+  MasterFailover/1  # GetParam() = application/json
+  MetricsEndpoint/0  # GetParam() = application/x-protobuf
+  MetricsEndpoint/1  # GetParam() = application/json
+  TaskRunning/0  # GetParam() = application/x-protobuf
+  TaskRunning/1  # GetParam() = application/json
+  TaskGroupRunning/0  # GetParam() = application/x-protobuf
+  TaskGroupRunning/1  # GetParam() = application/json
+  ReconcileTask/0  # GetParam() = application/x-protobuf
+  ReconcileTask/1  # GetParam() = application/json
+  KillTask/0  # GetParam() = application/x-protobuf
+  KillTask/1  # GetParam() = application/json
+  ShutdownExecutor/0  # GetParam() = application/x-protobuf
+  ShutdownExecutor/1  # GetParam() = application/json
+  Decline/0  # GetParam() = application/x-protobuf
+  Decline/1  # GetParam() = application/json
+  Revive/0  # GetParam() = application/x-protobuf
+  Revive/1  # GetParam() = application/json
+  Suppress/0  # GetParam() = application/x-protobuf
+  Suppress/1  # GetParam() = application/json
+  Message/0  # GetParam() = application/x-protobuf
+  Message/1  # GetParam() = application/json
+  Request/0  # GetParam() = application/x-protobuf
+  Request/1  # GetParam() = application/json
+  SchedulerReconnect/0  # GetParam() = application/x-protobuf
+  SchedulerReconnect/1  # GetParam() = application/json
+ContentTypeAndSSLConfig/SchedulerSSLTest.
+  RunTaskAndTeardown/0  # GetParam() = (application/x-protobuf, "http")
+  RunTaskAndTeardown/1  # GetParam() = (application/json, "http")
+Endpoint/SlaveEndpointTest.
+  AuthorizedRequest/0  # GetParam() = "monitor/statistics"
+  AuthorizedRequest/1  # GetParam() = "monitor/statistics.json"
+  AuthorizedRequest/2  # GetParam() = "containers"
+  UnauthorizedRequest/0  # GetParam() = "monitor/statistics"
+  UnauthorizedRequest/1  # GetParam() = "monitor/statistics.json"
+  UnauthorizedRequest/2  # GetParam() = "containers"
+  NoAuthorizer/0  # GetParam() = "monitor/statistics"
+  NoAuthorizer/1  # GetParam() = "monitor/statistics.json"
+  NoAuthorizer/2  # GetParam() = "containers"
+
+
+
+Command: make check GTEST_FILTER=-LogZooKeeperTest.*:ExamplesTest.*:ZooKeeperMasterContenderDetectorTest.*:MasterAllocatorTest/0.*:MasterAllocatorTest/1.*:MasterZooKeeperTest.LostZooKeeperCluster:MasterZooKeeperTest.MasterInfoAddress:ReservationTest.*:ZooKeeperStateTest.*:GroupTest.*:HttpFaultToleranceTest.*:RegistrarZooKeeperTest.*:ZooKeeperTest.*
